@@ -14,6 +14,7 @@ class homeController extends Controller
      */
     public function __invoke(Request $request)
     {
+        //teste
         return view('templates.masterHome');
     }
 }
