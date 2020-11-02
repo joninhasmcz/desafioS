@@ -20,6 +20,8 @@ Route::get('/pescaria', 'pescariaController');
 Route::get('/reserva', 'reservaController');
 Route::get('/criarPescador', 'pescadoresController@criarPescador')->name("criarPescador");
 Route::get('/mostrarPescador', 'pescadoresController@mostrarPescador')->name("mostrarPescador");
+Route::get('/deletarPescador', 'pescadoresController@deletarPescador')->name("deletarPescador");
+
 
 
 

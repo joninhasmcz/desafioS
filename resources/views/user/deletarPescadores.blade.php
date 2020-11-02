@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Criar </title>
+    <title> Deletar </title>
     <meta charset="utf-8">    
     
     <style>
@@ -16,18 +16,12 @@
     </style>
 </head>
 <body>
-    <h1> Criar Um Pescador </h1>
+    <h1> Deletar Um Pescador </h1>
     <section id = "view-form">
         {!! Form::open(['route' => 'pescadoresController@pegarDados','method' => 'post', 'class' => 'form-padrao']) !!}
             
-            @include('components.input', ['label' => 'NOME', 'input' => 'nome', 'attributes' => ['placeholder' => 'Nome']])
-            @include('components.input', ['label' => 'CPF', 'input' => 'cpf', 'attributes' => ['placeholder' => 'Cpf']])
-            @include('components.input', ['label' => 'TELEFONE', 'input' => 'telefone', 'attributes' => ['placeholder' => 'Telefone']])
-            @include('components.input', ['label' => 'ENDEREÇO', 'input' => 'endereço', 'attributes' => ['placeholder' => 'Endereço']])
-            <!-- @include('components.file', ['label' => 'FOTO', 'input' => 'foto', 'attributes' => ['placeholder' => 'Foto']]) -->
-            @include('components.submit', ['input' => 'Cadastrar'])
-            
-            
+            @include('components.input', ['label' => 'Id Escolhido', 'input' => 'id', 'attributes' => ['placeholder' => 'Nome']])
+            @include('components.submit', ['input' => 'Enviar'])         
         {!! Form::close() !!}
     </section>
 </body>

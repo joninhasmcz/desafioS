@@ -15,7 +15,7 @@
             </a>
         </li>
         <li>
-            <a href="{{Route('criarPescador')}}r">
+            <a href="{{Route('criarPescador')}}">
                 <h3> Criar Um Pescador </h3>
             </a>
         </li>
