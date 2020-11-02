@@ -15,14 +15,12 @@ class CreatePescadorsTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('pescadors', function(Blueprint $table) {
+		Schema::create('pescadores', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('nome', 50);
 			$table->string('cpf', 12)->unique();
 			$table->string('telefone', 50);
 			$table->string('endereco', 50);
-
-            $table->timestamps();
 		});
 	}
 
@@ -34,6 +32,6 @@ class CreatePescadorsTable extends Migration
 	public function down()
 	{
 
-		Schema::drop('pescadors');
+		Schema::drop('pescadores');
 	}
 }

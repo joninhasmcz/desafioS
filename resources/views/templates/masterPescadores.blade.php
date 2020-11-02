@@ -10,12 +10,12 @@
     <nav id="principal">
     <ul>
         <li>
-            <a href="">
+            <a href="{{Route('mostrarPescador')}}">
                 <h3> Mostrar Pescadores </h3>
             </a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/criarPescador">
+            <a href="{{Route('criarPescador')}}r">
                 <h3> Criar Um Pescador </h3>
             </a>
         </li>
@@ -30,7 +30,7 @@
             </a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/">
+            <a href="{{Route('home')}}">
                 <h3> Voltar </h3>
             </a>
         </li>

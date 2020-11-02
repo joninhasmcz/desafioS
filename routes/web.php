@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'homeController');
+Route::get('/', 'homeController')->name("home");
 Route::get('/pescadores', 'pescadoresController');
 Route::get('/pescados', 'pescadosController');
 Route::get('/pescaria', 'pescariaController');
 Route::get('/reserva', 'reservaController');
-Route::get('/criarPescador', 'pescadoresController@criarPescador');
-#Route::get('/criarPescado', 'pescadoController@criarPescado');
+Route::get('/criarPescador', 'pescadoresController@criarPescador')->name("criarPescador");
+Route::get('/mostrarPescador', 'pescadoresController@mostrarPescador')->name("mostrarPescador");
 
 
 
