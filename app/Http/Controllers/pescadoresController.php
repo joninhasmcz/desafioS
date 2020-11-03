@@ -19,7 +19,7 @@ class pescadoresController extends Controller
     }
     public function pegarDados(Request $request) 
     {
-        DB::table('pescadores')->insert(['nome' => $request->nome, 'cpf' => $request->cpf, 'telefone' => $request->telefone, 'endereco' => $request->endereco]);
+        DB::table('pescadores')->insert(['nome' => '$request->nome', 'cpf' => '$request->cpf', 'telefone' => '$request->telefone', 'endereco' => '$request->endereco']);
     }
     public function mostrarPescador() 
     {
