@@ -20,7 +20,7 @@ class reservaController extends Controller
     {
         DB::table('reservas')->insert(['id_pescaria' => $request->id_pescaria, 'id_pescado' => $request->id_pescado, 'id_pescador' => $request->id_pescador]);        
         
-        
+        return Route("reservarInitial");
     }
 
 }
