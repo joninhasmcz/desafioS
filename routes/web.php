@@ -45,6 +45,8 @@ Route::get('/deletarPescarias1', 'pescariaController@deletarIdPescaria')->name("
 // Campeonato Pesca
 Route::get('/reservaInitial', 'reservaController@reservaInitial')->name("reservarInitial");
 Route::get('/reservaInitial1', 'reservaController@reservaId')->name("reservarId");
+Route::get('/reservaClassificacaoP', 'reservaController@mostrarCampeonatoPeso')->name("classificarPeso");
+Route::get('/reservaClassificacaoQ', 'reservaController@mostrarCampeonatoQuantidade')->name("classificarQuantidade");
 
 
 

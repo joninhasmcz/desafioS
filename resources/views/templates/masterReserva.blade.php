@@ -15,8 +15,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <h3> Classificações da Pesca </h3>
+                    <a href="{{Route('classificarPeso')}}">
+                        <h3> Classificações da Pesca Peso </h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{Route('classificarQuantidade')}}">
+                        <h3> Classificações da Pesca Quantidade </h3>
                     </a>
                 </li>
                 <li>
