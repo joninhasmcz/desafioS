@@ -10,28 +10,28 @@
     <nav id="principal">
     <ul>
         <li>
-            <a href="">
+            <a href="{{Route('mostrarPescarias')}}">
                 <h3> Mostrar Pescarias </h3>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('criarPescarias')}}">
                 <h3> Criar Uma Pescaria </h3>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('editarPescarias')}}">
                 <h3> Editar Uma Pescaria </h3>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('deletarPescarias')}}">
                 <h3> Deletar Uma Pescaria </h3>
             </a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/">
-                <h3> Sair </h3>
+            <a href="{{Route('home')}}">
+                <h3> Voltar </h3>
             </a>
         </li>
     </ul>

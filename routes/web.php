@@ -34,6 +34,14 @@ Route::get('/editarPescados', 'pescadosController@editarPescado')->name("editarP
 Route::get('/editarPescados1', 'pescadosController@editarIdPescado')->name("editarIdPescados");
 Route::get('/deletarPescados', 'pescadosController@deletarPescado')->name("deletarPescados");
 Route::get('/deletarPescados1', 'pescadosController@deletarIdPescado')->name("deletarIdPescados");
+// Pescaria
+Route::get('/mostrarPescarias', 'pescariaController@mostrarPescarias')->name("mostrarPescarias");
+Route::get('/criarPescarias', 'pescariaController@criarPescaria')->name("criarPescarias");
+Route::get('/criarPescarias1', 'pescariaController@pegarDados')->name("inserirPescarias");
+Route::get('/editarPescarias', 'pescariaController@editarPescaria')->name("editarPescarias");
+Route::get('/editarPescarias1', 'pescariaController@editarIdPescaria')->name("editarIdPescarias");
+Route::get('/deletarPescarias', 'pescariaController@deletarPescaria')->name("deletarPescarias");
+Route::get('/deletarPescarias1', 'pescariaController@deletarIdPescaria')->name("deletarIdPescarias");
 
 
 

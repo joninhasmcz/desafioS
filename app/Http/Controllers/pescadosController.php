@@ -14,9 +14,7 @@ class pescadosController extends Controller
     public function mostrarPescados() 
     {
         $pescados = DB::table('pescados') -> select('*') -> get(0);
-
-        // dd($pescados);
-
+        
         return view('userPescados.mostrarPescados', ['pescados'=>$pescados]);
     }
     public function criarPescado() 
