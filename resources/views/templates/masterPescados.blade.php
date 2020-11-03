@@ -15,17 +15,17 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('criarPescados')}}">
                 <h3> Criar Um Pescado </h3>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('editarPescados')}}">
                 <h3> Editar Um Pescado </h3>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('deletarPescados')}}">
                 <h3> Deletar Um Pescado </h3>
             </a>
         </li>
