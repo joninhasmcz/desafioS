@@ -14,12 +14,13 @@ class pescadoresController extends Controller
     }
     public function criarPescador() 
     {
-        return view('user.criarPescadores');
+        return view('userPescadores.criarPescadores');
         
     }
     public function pegarDados(Request $request) 
     {
-        DB::table('pescadores')->insert(['nome' => '$request->nome', 'cpf' => '$request->cpf', 'telefone' => '$request->telefone', 'endereco' => '$request->endereco']);
+        DB::table('pescadores')->insert(['nome' => $request->nome, 'cpf' => $request->cpf, 'telefone' => $request->telefone, 'endereco' => $request->endereco]);
+        return view('components.sucesso');
     }
     public function mostrarPescador() 
     {
@@ -27,12 +28,28 @@ class pescadoresController extends Controller
 
         // dd($pescadores);
 
-        return view('user.mostrarPescadores', ['pescadores'=>$pescadores]);
+        return view('userPescadores.mostrarPescadores', ['pescadores'=>$pescadores]);
     }
-    public function deletarPescador(Request $request) 
+    public function deletarPescador() 
     {
-        return view('user.deletarPescadores');
-        DB::table('pescadores')->where('id', '=', $request-id)->delete();
+        return view('userPescadores.deletarPescadores');
+        
+    }
+    public function pegarId(Request $request) 
+    {
+        DB::table('pescadores')->where('id', '=', $request->id)->delete();
+        return view('components.sucesso');
+    }
+    public function editarPescador()
+    {
+        return view('userPescadores.editarPescadores');
+    }
+    public function editarIdPescador(Request $request) 
+    {
+        DB::table('pescadores')->where('id', '=', $request->id)->update(
+        ['nome' => $request->nome, 'cpf' => $request->cpf, 'telefone' => $request->telefone, 'endereco' => $request->endereco]);
+
+        return view('components.sucesso');
     }
 
     

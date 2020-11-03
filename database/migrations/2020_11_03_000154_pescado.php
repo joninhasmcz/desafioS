@@ -16,11 +16,10 @@ class Pescado extends Migration
         Schema::create('pescados', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('nome', 50);
-			$table->int('massa', 12)->unique();
-			$table->string('telefone', 50);
-			$table->string('endereco', 50);
+			$table->float('massa', 12,2);
+			$table->float('tamanho', 12,2);
 		});
-
+    }
     /**
      * Reverse the migrations.
      *
@@ -28,6 +27,6 @@ class Pescado extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('pescados');
     }
 }

@@ -18,7 +18,7 @@ class CreatePescadorsTable extends Migration
 		Schema::create('pescadores', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('nome', 50);
-			$table->string('cpf', 12)->unique();
+			$table->string('cpf', 20)->unique();
 			$table->string('telefone', 50);
 			$table->string('endereco', 50);
 		});

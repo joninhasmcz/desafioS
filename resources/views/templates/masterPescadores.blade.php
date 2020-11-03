@@ -20,12 +20,12 @@
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('editarPescador')}}">
                 <h3> Editar Um Pescador </h3>
             </a>
         </li>
         <li>
-            <a href="">
+            <a href="{{Route('deletarPescador')}}">
                 <h3> Deletar Um Pescador </h3>
             </a>
         </li>

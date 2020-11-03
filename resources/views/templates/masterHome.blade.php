@@ -10,22 +10,22 @@
     <nav id="principal">
     <ul>
         <li>
-            <a href="http://127.0.0.1:8000/pescadores">
+            <a href="{{Route('pescadores')}}">
                 <h3> Pescador </h3>
             </a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/pescados">
+            <a href="{{Route('pescados')}}">
                 <h3> Pescado </h3>
             </a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/pescaria">
+            <a href="{{Route('pescaria')}}">
                 <h3> Pescaria </h3>
             </a>
         </li>
         <li>
-            <a href="http://127.0.0.1:8000/reserva">
+            <a href="{{Route('reserva')}}">
                 <h3> Campeonato de Pesca </h3>
             </a>
         </li>

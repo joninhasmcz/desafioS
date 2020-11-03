@@ -10,4 +10,12 @@ class pescadosController extends Controller
     {
         return view('templates.masterPescados');
     }
+    public function mostrarPescados() 
+    {
+        $pescados = DB::table('pescados') -> select('name','massa','tamanho') -> get(0);
+
+        // dd($pescadores);
+
+        return view('userPescados.mostrarPescados', ['pescados'=>$pescados]);
+    }
 }
